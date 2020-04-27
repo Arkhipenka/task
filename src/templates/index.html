@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="En">
     <head>
-        <title></title>
+        <title>English for Kids</title>
     </head>
     <body>
-        <div class="pg-wrapper">
-            <main></main>
-        </div>
+        <%= require('./includes/header.part.html') %> <%=
+        require('./includes/modal-menu.part.html') %>
+        <main>
+            <section class="categories">
+                <div class="category" number="0">
+                    <img
+                        src="<%= require('../static/photo/angry
+                    .jpg') %>"
+                    />
+                    <p>Action (set A)</p>
+                </div>
+                <div class="category" number="1"><p>Action (set B)</p></div>
+                <div class="category" number="2"><p>Action (set C)</p></div>
+                <div class="category" number="3"><p>Adjective</p></div>
+                <div class="category" number="4"><p>Animal (set A)</p></div>
+                <div class="category" number="5"><p>Animal (set B)</p></div>
+                <div class="category" number="6"><p>Clothes</p></div>
+                <div class="category" number="7"><p>Emotion</p></div>
+            </section>
+            <button id="btn-start">Start</button>
+        </main>
     </body>
 </html>
